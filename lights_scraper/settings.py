@@ -1,3 +1,5 @@
+import os
+
 # Scrapy settings for lights_scraper project
 #
 # For simplicity, this file contains only settings considered important or
@@ -62,7 +64,7 @@ ITEM_PIPELINES = {
     "scrapy.pipelines.files.FilesPipeline": 1,
 }
 
-FILES_STORE = "/home/awake/lights"
+FILES_STORE = f"{os.environ['HOME']}/lights"
 
 
 # Enable and configure the AutoThrottle extension (disabled by default)
