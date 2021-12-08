@@ -1,10 +1,12 @@
 import scrapy
+import requests
+
 from selenium import webdriver
 from webdriver_manager.firefox import GeckoDriverManager
 from scrapy.selector import Selector
-from lights_scraper.items import productItem
 from selenium.webdriver.firefox.options import Options
-import requests
+
+from lights_scraper.items import productItem
 from lights_scraper.settings import FILES_STORE
 
 
